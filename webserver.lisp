@@ -1,8 +1,11 @@
 (in-package :tutoring-site)
 
+(defvar *www-dir* (asdf:system-relative-pathname "tutoring-site-sys" "www/"))
+
 (defvar *acceptor* (make-instance 'hunchentoot:easy-acceptor
                                   :port 4242
-                                  :address "0.0.0.0"))
+                                  :address "0.0.0.0"
+                                  :document-root *www-dir*))
 (defun start-server () (hunchentoot:start *acceptor*))
 (defun stop-server () (hunchentoot:stop *acceptor*))
 

@@ -3,8 +3,6 @@
 ;Okay, start small w/ the HTML. Let's make a simple page.
 ;Hey, I did it! Now time to wrangle it into a fully functional page.
 
-(defvar *www-dir* (asdf:system-relative-pathname "tutoring-site-sys" "www/"))
-
 (defclass page ()
   ((title
     :initarg :title
@@ -23,12 +21,13 @@
     (:html
      (:head
       (display-css page status))
-     (:header
-      (display-header page status))
      (:body
-      (display-body page status))
-     (:footer
-      (display-footer page status)))))
+      (:header
+       (display-header page status))
+      (:main
+       (display-main page status))
+      (:footer
+       (display-footer page status))))))
 
 (defgeneric display-header (page status)
   (:documentation "Displays the header of a page. Calls display-nav after."))
@@ -46,9 +45,9 @@
 (defmethod display-nav (page status)
   nil)
 
-(defgeneric display-body (page status))
+(defgeneric display-main (page status))
 
-(defmethod display-body (page status)
+(defmethod display-main (page status)
   (with-html
     (:p "Lorem Ipsum")))
 
