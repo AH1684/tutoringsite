@@ -2,6 +2,7 @@
   :description "Webserver for the tutoring site."
   :author "ahorn40K@gmail.com"
   :depends-on (:hunchentoot :str :spinneret :local-time)
+  :pathname "src"
   :components ((:file "packages")
                (:file "webserver")
                (:file "site-pages")

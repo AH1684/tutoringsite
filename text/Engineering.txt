@@ -1,0 +1,10 @@
+Engineering
+Statics
+Engineering Dynamics
+Controls
+Materials Science
+Thermodynamics
+Fluid Mechanics
+Gas Dynamics
+Numeric Methods
+Electronic Circuits
