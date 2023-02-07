@@ -2,6 +2,8 @@ Engineering
 Statics
 Engineering Dynamics
 Controls
+Algorithm Design
+Introductory Programming
 Materials Science
 Thermodynamics
 Fluid Mechanics

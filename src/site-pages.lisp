@@ -7,7 +7,7 @@
   ((title
     :initarg :title
     :accessor title
-    :initform "Horn University Tutoring")))
+    :initform "Andrew Horn - University Tutor")))
 
 (defclass status ()
   ())
@@ -51,7 +51,8 @@
   (with-html
     (:p "Lorem Ipsum")))
 
-(defgeneric display-footer (page status))
+(defgeneric display-footer (page status)
+  (:documentation "Displays the footer section."))
 
 (defmethod display-footer (page status)
   nil)
