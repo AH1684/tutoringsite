@@ -10,7 +10,7 @@
 (defmethod display-nav ((page primary-layout) status)
   (with-html
       (:a :href "/" "Home")
-    (:a :href "/info" "Info")
+    (:a :href "/info.html" "Info")
     ;; (:a :href "/art" "Art")
     ))
 
@@ -57,6 +57,8 @@
          (:li "$30 per hour per person for group schelduling.")
          (:li "$20 per hour for my large classes.")
          )
+    (:h5 "What if I need help with a 2 minute problem?")
+    (:p "Feel free to email me for help anytime!")
     (:h5 "What times do you tutor?")
     (:p "9-5 CT, Monday - Friday.")
     (:p "I can work in the evenings as necessary.")

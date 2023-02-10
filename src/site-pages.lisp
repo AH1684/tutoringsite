@@ -7,7 +7,7 @@
   ((title
     :initarg :title
     :accessor title
-    :initform "Andrew Horn - University Tutor")))
+    :initform "Horn University Tutoring")))
 
 (defclass status ()
   ())
@@ -33,7 +33,8 @@
   (:documentation "Displays the header of a page. Calls display-nav after."))
 
 (defmethod display-header (page status)
-  nil)
+  (with-html
+    (:h1 (title page))))
 
 (defmethod display-header :after (page status)
   (with-html
@@ -48,8 +49,7 @@
 (defgeneric display-main (page status))
 
 (defmethod display-main (page status)
-  (with-html
-    (:p "Lorem Ipsum")))
+  nil)
 
 (defgeneric display-footer (page status)
   (:documentation "Displays the footer section."))
@@ -62,3 +62,8 @@
 (defmethod display-css (page status)
   (with-html
     (:link :rel "stylesheet" :href "simple.css")))
+
+(defclass 404Page (page)
+  ()
+  (:default-initargs
+   :title "404 - Page Not Found"))
