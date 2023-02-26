@@ -7,7 +7,7 @@
   ((title
     :initarg :title
     :accessor title
-    :initform "Horn University Tutoring")))
+    :initform "A. Horn - Online University Tutor")))
 
 (defclass status ()
   ())

@@ -8,5 +8,6 @@ Materials Science
 Thermodynamics
 Fluid Mechanics
 Gas Dynamics
+Mechanics of Materials
 Numeric Methods
-Electronic Circuits
+Electronic Circuits/Introduction to Electrical Engineering

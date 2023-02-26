@@ -10,3 +10,4 @@
 (build-page (make-instance 'home-page) "index.html")
 (build-page (make-instance 'info-page) "info.html")
 (build-page (make-instance '404page) "404.html")
+(build-page (make-instance 'reviews) "reviews.html")
